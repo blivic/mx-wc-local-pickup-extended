@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Media X
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mx-wc-local-pickup-extended\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-25 10:49+0100\n"
+"PO-Revision-Date: 2016-03-25 11:11+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: hr\n"
+
+#: mx-wc-local-pickup-extended.php:29 mx-wc-local-pickup-extended.php:30
+#: mx-wc-local-pickup-extended.php:128
+msgid "Local Pickup Extended"
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:32
+msgid "Local pickup with user selectable options"
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:119
+msgid "Enable"
+msgstr "Omogući"
+
+#: mx-wc-local-pickup-extended.php:121
+msgid "Enable Local Pickup Extended "
+msgstr "Omogući Local Pickup Extended"
+
+#: mx-wc-local-pickup-extended.php:125
+msgid "Title"
+msgstr "Naslov"
+
+#: mx-wc-local-pickup-extended.php:127
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+"Ovo polje definira naslov koji će kupac vidjeti na stranici prilikom naplate."
+
+#: mx-wc-local-pickup-extended.php:132
+msgid "Fee Type"
+msgstr "Vrsta troška/popusta"
+
+#: mx-wc-local-pickup-extended.php:134
+msgid "How to calculate pickup charges"
+msgstr "Kako izračunati troškove preuzimanja"
+
+#: mx-wc-local-pickup-extended.php:137
+msgid "Fixed amount"
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:138
+msgid "Percentage of cart total"
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:139
+msgid "Fixed amount per product"
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:144
+msgid "Pickup Fee/Discount"
+msgstr "Trošak preuzimanja/iznos popusta"
+
+#: mx-wc-local-pickup-extended.php:146
+msgid ""
+"What fee do you want to charge for local pickup. Enter negative value for "
+"discount. Leave blank to disable."
+msgstr ""
+"Koji trošak želite zaračunati za ovu metodu dostave. Ako želite dati popust, "
+"upišite negativnu vrijednost (npr. -10). Ostavite prazno za besplatno."
+
+#: mx-wc-local-pickup-extended.php:155
+msgid "Hide Shipping Address"
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:157
+msgid ""
+"Hide the shipping address when local pickup plus is selected at checkout."
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:161
+msgid "Zip/Post Codes"
+msgstr "Poštanski broj"
+
+#: mx-wc-local-pickup-extended.php:163
+msgid ""
+"What zip/post codes can use the local pickup option? Separate codes with a "
+"comma. Accepts wildcards, e.g. P* will match a postcode of PE30."
+msgstr ""
+"Koji poštanski brojevi mogu koristiti ovu opciju dostave? Odvojite brojeve "
+"zarezom. Podržano korištenje wildcards, npr. 52* će odgovarati poštanskom "
+"broju 52100."
+
+#: mx-wc-local-pickup-extended.php:169
+msgid "Method availability"
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:174
+msgid "All allowed countries"
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:175 mx-wc-local-pickup-extended.php:179
+msgid "Specific Countries"
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:186
+msgid "Select some countries"
+msgstr ""
+
+#: mx-wc-local-pickup-extended.php:201
+msgid ""
+"Local pickup extended is a shipping method for picking up orders locally, on "
+"multiple locations."
+msgstr ""
+"Local pickup extended je metoda dostave za lokalno preuzimanje na jednoj ili "
+"više lokacija. Besplatno, uz naknadu ili s popustom."
+
+#: mx-wc-local-pickup-extended.php:320
+msgid "Pickup Options"
+msgstr "Opcije preuzimanja"
+
+#: mx-wc-local-pickup-extended.php:326
+msgid "Option"
+msgstr "Ime i adresa poslovnice"
+
+#: mx-wc-local-pickup-extended.php:344
+msgid "Add Option"
+msgstr "Dodaj novu opciju"
+
+#: mx-wc-local-pickup-extended.php:344
+msgid "Delete selected options"
+msgstr "Obriši odabrane opcije"
+
+#: mx-wc-local-pickup-extended.php:361
+msgid "Delete the selected options?"
+msgstr "Obrisati odabrane opcije?"
+
+#: mx-wc-local-pickup-extended.php:411
+msgid "Choose pickup location"
+msgstr "Izaberite poslovnicu"
+
+#: mx-wc-local-pickup-extended.php:413
+msgid "Select Location"
+msgstr "Izaberite lokaciju"
+
+#: mx-wc-local-pickup-extended.php:491 mx-wc-local-pickup-extended.php:503
+msgid "Pickup Location"
+msgstr "Lokacija preuzimanja"
