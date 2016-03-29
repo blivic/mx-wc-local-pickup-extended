@@ -1,6 +1,3 @@
-# mx-wc-local-pickup-extended
-A shipping plugin for WooCommerce that extends the Local pickup method by adding multiple pickup locations.
-
 === MX WooCommerce Local Pickup Extended ===
 Contributors: Media X
 Donate link: -
