@@ -32,11 +32,8 @@ if (!class_exists('MXWC_Shipping_Options')) {
                 $this->init();
             }
 
-            /**
+            /*
              * Init settings
-             *
-             * @access public
-             * @return void
              */
             function init() {
                 // Load the settings API
@@ -68,13 +65,9 @@ if (!class_exists('MXWC_Shipping_Options')) {
                 }
             }
 
-            /**
-            * calculate_shipping function.
-            *
-            * @access public
-            * @param array $package (default: array())
-            * @return void
-            */
+            /*
+             * calculate_shipping function
+             */
            function calculate_shipping($package = array()) {
                 $shipping_total = 0;
                 $fee = ( trim($this->fee) == '' ) ? 0 : $this->fee;
@@ -104,11 +97,8 @@ if (!class_exists('MXWC_Shipping_Options')) {
                 $this->add_rate($rate);
             }
 
-            /**
-             * init_form_fields function.
-             *
-             * @access public
-             * @return void
+            /*
+             * init_form_fields function
              */
             function init_form_fields() {
                 $this->form_fields = array(
@@ -126,7 +116,7 @@ if (!class_exists('MXWC_Shipping_Options')) {
                         'desc_tip' => true,
                     ),
 					'type' => array(
-                        'title' => __('Fee Type', 'woocommerce'),
+                        'title' => __('Fee/Discount Type', 'woocommerce'),
                         'type' => 'select',
                         'description' => __('How to calculate pickup charges', 'mx-wc-local-pickup-extended'),
                         'default' => 'fixed',
@@ -140,7 +130,7 @@ if (!class_exists('MXWC_Shipping_Options')) {
                     'fee' => array(
                         'title' => __('Pickup Fee/Discount', 'mx-wc-local-pickup-extended'),
                         'type' => 'price',
-                        'description' => __('What fee do you want to charge for local pickup. Enter negative value for discount. Leave blank to disable.', 'mx-wc-local-pickup-extended'),
+                        'description' => __('What fee do you want to charge for local pickup? Enter negative value for discount. Leave blank to disable.', 'mx-wc-local-pickup-extended'),
                         'default' => '',
                         'desc_tip' => true,
                         'placeholder' => wc_format_localized_price(0)
@@ -180,12 +170,9 @@ if (!class_exists('MXWC_Shipping_Options')) {
                 );
             }
 
-            /**
-            * admin_options function.
-            *
-            * @access public
-            * @return void
-            */
+            /*
+             * admin_options function
+             */
            function admin_options() {
                    ?>
                    <h3><?php echo $this->method_title; ?></h3>
@@ -195,19 +182,15 @@ if (!class_exists('MXWC_Shipping_Options')) {
                    </table> <?php
            }
 
-           /**
-             * is_available function.
-             *
-             * @access public
-             * @param array $package
-             * @return bool
+            /*
+             * is_available function
              */
             function is_available($package) {
 
                 if ($this->enabled == "no")
                     return false;
 
-                // If post codes are listed, let's use them.
+                // If post codes are listed, use them
                 $codes = '';
                 if ($this->codes != '') {
                     foreach (explode(',', $this->codes) as $code) {
@@ -259,7 +242,6 @@ if (!class_exists('MXWC_Shipping_Options')) {
                     }
                 }
 
-                // Either post codes not setup, or post codes are in array... so lefts check countries for backwards compatibility.
                 if ($this->availability == 'specific') {
                     $ship_to_countries = $this->countries;
                 } else {
@@ -272,37 +254,26 @@ if (!class_exists('MXWC_Shipping_Options')) {
                     }
                 }
 
-                // Yay! We passed!
+                // Great, we passed! Let's proceed
                 return apply_filters('woocommerce_shipping_' . $this->id . '_is_available', true, $package);
             }
 
-            /**
-             * clean function.
-             *
-             * @access public
-             * @param mixed $code
-             * @return string
+            /*
+             * clean function
              */
             function clean($code) {
                 return str_replace('-', '', sanitize_title($code)) . ( strstr($code, '*') ? '*' : '' );
             }
 
-            /**
-            * validate_shipping_options_table_field function.
-            *
-            * @access public
-            * @param mixed $key
-            * @return bool
-            */
+            /*
+             * validate_shipping_options_table_field function
+             */
             function validate_shipping_options_table_field( $key ) {
                 return false;
             }
 
-            /**
-             * generate_options_table_html function.
-             *
-             * @access public
-             * @return string
+            /*
+             * generate_options_table_html function
              */
             function generate_shipping_options_table_html() {
                 ob_start();
@@ -326,7 +297,7 @@ if (!class_exists('MXWC_Shipping_Options')) {
                             ?>
                                         <tr class="option-tr">
                                             <th class="check-column"><input type="checkbox" name="select" /></th>
-                                            <td><input placeholder="First name" style="width:60%;" type="text" name="<?php echo esc_attr($this->id . '_options[' . $i . ']') ?>" value="<?php echo $option; ?>"></td>
+                                            <td><input style="width:60%;" type="text" name="<?php echo esc_attr($this->id . '_options[' . $i . ']') ?>" value="<?php echo $option; ?>"></td>
                                         </tr>
                             <?php endforeach; endif; ?>
                             </tbody>
@@ -366,11 +337,8 @@ if (!class_exists('MXWC_Shipping_Options')) {
                 return ob_get_clean();
             }
 
-            /**
+            /*
              * process_shipping_options function.
-             *
-             * @access public
-             * @return void
              */
             function process_shipping_options() {
 
@@ -384,12 +352,9 @@ if (!class_exists('MXWC_Shipping_Options')) {
                 $this->get_shipping_options();
             }
 
-            /**
-            * get_shipping_options function.
-            *
-            * @access public
-            * @return void
-            */
+            /*
+             * get_shipping_options function.
+             */
            function get_shipping_options() {
                    $this->shipping_options = array_filter( (array) get_option( $this->options_array_label ) );
            }
@@ -471,8 +436,8 @@ if (!class_exists('MXWC_Shipping_Options')) {
     }
 	
 	       /*
-             * display pickup location meta on the Order details page
-           */
+            * display pickup location meta on the Order details page
+            */
 		   
 	       add_action( 'woocommerce_order_details_after_order_table', 'mx_shipping_display_custom_order_meta', 10, 1 );
 
@@ -483,9 +448,9 @@ if (!class_exists('MXWC_Shipping_Options')) {
               }
            }
 	      
-		  /*
-             * add pickup location meta to order emails
-           */
+		   /*
+            * add pickup location meta to order emails
+            */
 		   
            add_filter('woocommerce_email_order_meta_keys', 'mx_shipping_option_meta_keys');
 
