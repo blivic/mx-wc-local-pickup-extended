@@ -40,9 +40,6 @@ Sure, no problem. There's a POT file in the languages folder so you can localize
 
 == Screenshots ==
 
-1. Frontend cart & checkouts
-2. Admin panel
-
 == Changelog ==
 
 = 1.0 =
