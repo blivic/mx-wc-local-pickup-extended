@@ -20,7 +20,13 @@ Admins and/or shop managers can configure and offer a fee or discount for pickup
 
 ### Screenshots
 
+#### Settings page ( Woo - Settings - Shipping - Local pickup extended)
+
 ![Local pickup extended settings](http://media-x.hr/wp-content/uploads/2016/03/Local-pickup-extended-Settings.jpeg)
+
+#### Frontend (checkout)
+
+![Local pickup extended frontend](http://media-x.hr/wp-content/uploads/2016/03/pickup-in-store-select.jpeg)
 
 ### Frequently Asked Questions ==
 
