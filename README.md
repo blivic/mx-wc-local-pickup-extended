@@ -1,11 +1,8 @@
 ## MX WooCommerce Local Pickup Extended 
 
-Requires at least: 4.0
-Tested up to: 4.4.2
-Tested WooCommerce up to: 2.5.0
-Stable tag: 1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Requires at least: 4.0
+* Tested up to: 4.4.2
+* Tested WooCommerce up to: 2.5.0
 
 A shipping plugin for WooCommerce that extends the Local pickup method by adding multiple pickup locations.
 
@@ -21,6 +18,9 @@ Admins and/or shop managers can configure and offer a fee or discount for pickup
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Use the WooCommerce -> Settings -> Shipping -> Local Pickup Extended screen to configure the available options
 
+### Screenshots
+
+![Local pickup extended settings](http://media-x.hr/wp-content/uploads/2016/03/Local-pickup-extended-Settings.jpeg)
 
 ### Frequently Asked Questions ==
 
