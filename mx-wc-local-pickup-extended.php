@@ -462,13 +462,6 @@ if (!class_exists('MXWC_Shipping_Options')) {
                 return $keys;
                 }
             }
-			//Remove (Free) label on cart page for "Shipping and Handling" if cost is $0
-function sv_change_cart_shipping_free_label( $label ) {
-    $label =  str_replace( "(Free)", " ", $label );
-    return $label;
-}
-add_filter( 'woocommerce_cart_shipping_method_full_label' , 'sv_change_cart_shipping_free_label' );
-
 
          add_action('woocommerce_shipping_init', 'mx_shipping_methods_init');
          add_action( 'wp_ajax_mx_save_selected', 'mx_save_selected' );
