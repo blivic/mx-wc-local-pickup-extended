@@ -254,7 +254,7 @@ if (!class_exists('MXWC_Shipping_Options')) {
                     }
                 }
 
-                // Great, we passed! Let's proceed
+                // Gr8, we passed! Let's proceed
                 return apply_filters('woocommerce_shipping_' . $this->id . '_is_available', true, $package);
             }
 
