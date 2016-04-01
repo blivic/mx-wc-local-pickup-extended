@@ -18,6 +18,10 @@ Admins and/or shop managers can configure and offer a fee or discount for pickup
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Use the WooCommerce -> Settings -> Shipping -> Local Pickup Extended screen to configure the available options
 
+### Credits
+
+This plugin is a fork of the WooCommerce Shipping Options plugin available in the WP repo. It now works specifically for Local pickup, the chosen pickup location is now visible also on the Order details page (after purchase) and in the order emails. Once this shipping method is selected, selecting one of the available options (pickup locations) is required. Also, now you can enter negative values in the pickup fee/discount field so you can also offer discounts. The plugin is ready for localization (translation). There's a POT file in the languages folder so translating the strings is a breeze now. Btw, the plugin is already translated to Croatian.
+
 ### Screenshots
 
 ##### Settings page ( Woo - Settings - Shipping - Local pickup extended)
@@ -27,6 +31,9 @@ Admins and/or shop managers can configure and offer a fee or discount for pickup
 ##### Frontend (checkout)
 
 ![Local pickup extended frontend](http://media-x.hr/wp-content/uploads/2016/03/pickup-in-store-select.jpeg)
+
+##### Want more screenshots?
+The blog post [MX WooCommerce Local Pickup Extended](http://media-x.hr/mx-woocommerce-local-pickup-extended/) is in Croatian but you can check the additional screenshots.
 
 ### Frequently Asked Questions ==
 
