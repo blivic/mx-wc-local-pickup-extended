@@ -35,7 +35,7 @@ This plugin is a fork of the WooCommerce Shipping Options plugin available in th
 ##### Want more screenshots?
 The blog post [MX WooCommerce Local Pickup Extended](http://media-x.hr/mx-woocommerce-local-pickup-extended/) is in Croatian but you can check the additional screenshots.
 
-### Frequently Asked Questions ==
+### Frequently Asked Questions
 
 > What does this plugin do? 
 
